@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Toms Notes</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Toms Notes Yo</h1>
+      <nav class="nav-container">
+        <span class="nav-span-item">
+          <a href="index.html">Home</a>
+        </span>
+        <span class="nav-span-item">
+          <a href="SQL.html">SQL</a>
+        </span>
+        <span class="nav-span-item">
+          <a href="#">Section 2</a>
+        </span>
+        <span class="nav-span-item">
+          <a href="#">Section 2</a>
+        </span>
+      </nav>
+    </header>
+    <section>
+      <p>
+        Postgre SQL -'Postgres' - Popular relational database. Free, popular.
+        Used as primary database for many web and mobile applications. Postgress
+        is an object-relational DB, MySQL is a standard relational DB, so
+        Postgress includes things like table inheritance. Postgress also more
+        closely alligned to SQL standards when it comes to case sensitivity,
+        making capitlisation more specific, also supported across multiple
+        languages unlike MySQL. Basically more popular and better than MySQL.
+      </p>
+      <h3>Chinook</h3>
+      <p>
+        Chinook is a sample DB, freely available, can be used with most
+        relational DB's. Link
+        https://github.com/lerocha/chinook-database/blob/master/ChinookDatabase/DataSources/Chinook_PostgreSql.sql
+      </p>
+      <p>
+        Terminal command - psql - this and only this into terminal will 'enter
+        DB mode' the Postgres CLI command line interface
+      </p>
+      <p>Terminal command - \l - List all DB's (must be in CLI)</p>
+      <p>
+        in terminal commands - \c database - In this example you will connect to
+        whatever database name is provided
+      </p>
+      <p>
+        Terminal command - CREATE DATABASE databasename; - This will create a
+        database of whatever name is given as databasename, must have semicolon
+        to close
+      </p>
+      <p>
+        Termial command - \i localdatabasename_PostgreSql.sql - This example
+        would install/initialise the PostgreSql.sql standard sample into DB of
+        localdatabasename
+      </p>
+      <p>
+        Terminal command - \q - Will quit Postgres and return to normal terminal
+      </p>
+      <p>
+        Terminal command - q - Just q by itself exits the current query, not the
+        CLI
+      </p>
+      <p>
+        Terminal command - SELECT * FROM "Something"; - This command doesn't
+        need capitals but this is standard practice to identify the different
+        pieces of the query, asterisk means select all. - SELECT "Artist" WHERE
+        "Name" = 'Oasis'; - This command would find Artists that are Named
+        Oasis, actual value to be searched for in this case must in single
+        quotes. This is to distinguish between "Column Names" and 'Value'.
+      </p>
+    </section>
+    <footer></footer>
+  </body>
+</html>

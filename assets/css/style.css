@@ -1,14 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 300%;
+    line-height: 80px;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: cornflowerblue;
+}
+
 .home-background-image {
-    width: 1000px;
+    width: 750px;
     height: auto;
+    float: right;
+    padding-right: 100px;
 }
 
 .nav-container {
     display: flex;
     flex-direction: row;
-    background-color: black;
-    line-height: 100px;
+    line-height: 60px;
     justify-content: space-evenly;
 }
 
-.nav-span-item {}
+.nav-span-item {
+    font-size: 150%;
+}
+
+.nav-span-item>a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
