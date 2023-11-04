@@ -1,0 +1,14 @@
+.home-background-image {
+    width: 1000px;
+    height: auto;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    line-height: 100px;
+    justify-content: space-evenly;
+}
+
+.nav-span-item {}
