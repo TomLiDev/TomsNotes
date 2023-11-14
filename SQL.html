@@ -26,7 +26,11 @@
         </span>
       </nav>
     </header>
+
+    <!-- Page Content -->
+
     <section>
+      <h2>SQL/Sequel</h2>
       <p>
         Postgre SQL -'Postgres' - Popular relational database. Free, popular.
         Used as primary database for many web and mobile applications. Postgress
@@ -75,6 +79,36 @@
         "Name" = 'Oasis'; - This command would find Artists that are Named
         Oasis, actual value to be searched for in this case must in single
         quotes. This is to distinguish between "Column Names" and 'Value'.
+      </p>
+      <h3>psycopg2</h3>
+      <p>
+        PsycoPG2 is a very popular library for connecting Python to Postgres,
+        including Django. Essentially an adapter to allow python functions on
+        Postgres DB.
+      </p>
+      <p>
+        Terminal command - pip3 install psycopg2 - Will install psycopg2 library
+        into project.
+      </p>
+      <h3>ORM</h3>
+      <p>
+        ORM stands for Object Relational Mapping. Essentially a way to query
+        data in a database through the use of objects. Object - The object that
+        you are using from the programming language. Most popular ORM libraries
+        are Djamgo and SQL Alchemy. SQL Alchemy particularly good as it is
+        agnostic and facilitates cleaner code.
+      </p>
+      <p>
+        Terminal command - pip3 install SQLAlchemy - pip3 install
+        sqlalchemy==1.4.46 -
+      </p>
+      <p>
+        Expression Language - middle layer of SQL Alchemy abstraction. Allows
+        for looser use of grammer and double quotes etc.
+      </p>
+      <p>
+        Class/Method Based Models - The most 'Pythonic' method and the highest
+        level of abstraction. Each class/method should only do one thing.
       </p>
     </section>
     <footer></footer>

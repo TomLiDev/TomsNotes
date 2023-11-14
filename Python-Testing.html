@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Toms Notes</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Toms Notes Yo</h1>
+      <nav class="nav-container">
+        <span class="nav-span-item">
+          <a href="index.html">Home</a>
+        </span>
+        <span class="nav-span-item">
+          <a href="SQL.html">SQL</a>
+        </span>
+        <span class="nav-span-item">
+          <a href="#">Flask</a>
+        </span>
+        <span class="nav-span-item">
+          <a href="#">Section 2</a>
+        </span>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+
+    <section>
+      <h2>Python Testing</h2>
+      <p>
+        Similar in many ways to JavaScript Testing, although there are some
+        differences.
+      </p>
+      <p>
+        Popular Testing Frameworks for Python - Unittest, PyTest, Robot, DocTest
+        and Testify.
+      </p>
+      <p>
+        Focus on Unittest, part of the standard Python library. Django also uses
+        Unittest as its testing framework.
+      </p>
+      <p>This kind of automated testing is key part of DevOps</p>
+      <p>
+        Red - Green - Refactor cycle. Red part is writing a test that will fail.
+        Green is writing bare minimum to pass the test. Once code passes the
+        test refactoring can take place to make the code more efficient.
+      </p>
+      <p>Test Suite - A group of testing cases that fit in a group together.</p>
+      <p>
+        Test Fixture - Test fixtures are to ensure there is a well-known and
+        fixed environment in which tests are run so that results are repeatable.
+        E.g. loading a database with a known set of data, copying files etc.
+      </p>
+      <p>
+        For Unittest, test files must begin with the word test, e.g
+        test_value.py. Methods within test files must also begin with test_
+        otherwise it will be ignored.
+      </p>
+      <p>
+        import unittest - Single line required at top of test file, does not
+        require a pip3 install command as Unittest is part of the standard
+        Python libary.
+      </p>
+      <p>
+        class SomeClass(unittest.TestCase): - This is how a test must start to
+        make use of Unittest functionality, in this the unittest.TestCase bit is
+        passing Unittest functionality into the testing class.
+      </p>
+      <p>
+        assert - Method that can be called in this testing on a particular
+        instance of a class to check for values e.g. - assertEqual - would look
+        for the result of a certain method to see if it equalled something.
+      </p>
+      <p>
+        setUp - Unittest method for building/setting things up temporarily for
+        testing purposes. Is run before each test individually.
+      </p>
+      <p>
+        tearDown - Opposite of setUp, destroys/removes temporary
+        files/folders/connection to DB's etc.
+      </p>
+      <p>
+        setUpClass - Similar to setUp but only run once at very beginning before
+        all tests.
+      </p>
+      <p>
+        tearDownClass - Similar to above but will tear down/destroy things once
+        at the end, after all other tests have been run.
+      </p>
+      <p>
+        Mocking - Creating scenarios for testing things beyond the immediate
+        code. E.g. mocking connection to an external API.
+      </p>
+      <p>
+        from unittest.mock import patch - import line required at top of test
+        file to do mocking stuff.
+      </p>
+    </section>
+    <footer></footer>
+  </body>
+</html>
