@@ -67,7 +67,73 @@
         a specific url is entered.
       </p>
       <p>
-        render function - built in function of Django (and other frameworks) takes 2 arguments. 
+        render function - built in function of Django (and other frameworks)
+        takes 2 arguments, first is a HTTP request, second is a template name.
+        It returns a HTTP response which renders the specific template. <br />
+        The below line is an example of a return line from a python function
+        which is rendering a specific html file found at the pathway specified.
+        return render(request, 'todo/todo_list.html')
+      </p>
+      <p>
+        python3 manage.py makemigrations - Terminal command to convert python
+        code into SQL code. with --dry-run added at the end, this will not
+        actually make migrations but will highlight any changes that would be
+        made by running the command. makemigrations essentially sets up the
+        database and creates an admin user to manage it.
+      </p>
+      <p>
+        python3 manage.py showmigrations - Terminal command to show migrations
+        which need to be made, outstanding.
+      </p>
+      <p>python3 manage.py migrate - Performs necessary migrations</p>
+      <p>
+        python3 manage.py createsuperuser - Terminal command to create
+        admin/database user. Once this has been done, the Django admin panel for
+        the site can be accessed by simply adding /admin onto the website URL.
+      </p>
+      <h3>Django Data Stuff</h3>
+      <p>
+        models.py - Automatically created file with Django, this is where data
+        models are created and managed. A class at this level is very similar
+        conceptually to an individual sheet in an excel doc, with the entire
+        excel being the database, therefore a data model is comparable to a
+        sheet. This file automatically imports the model class from Django.
+      </p>
+      <p>
+        from django.db import models <br />
+        # Create your models here. <br />
+        class Item(models.Model): <br />
+        The above is a basic example of the Django models functionality. In this
+        case the manually created Item class in inheriting the base model class
+        from the imported Django model class.
+      </p>
+      class Item(models.Model): <br />
+      name = models.CharField(max_length=50, null=False, blank=False) <br />
+      done = models.BooleanField(null=False, blank=False, default=False) <br />
+      The above is an extended example of using inheritance to create a data
+      model from the Django class model. In this example the custom, manually
+      created attributes of name and done (intended as a status against to do
+      items) have been added to the Items class. These have been customised
+      using standard values from Django, such as max characters, and settings
+      which prevent an empty value being entered. <br />
+      After this item call was created, python3 manage.py makemigrations was run
+      to actually create the migration from the model provided. This also
+      creates a new .py file. <br />
+      Then python3 manage.py migrate was used to create the database table
+      itself.
+      <p>
+        {{ item }} - When used in a html template with Django, this double curly
+        brackets syntax allows things from a dictionary to be rendered in the
+        page. This is called a template variable.
+      </p>
+      <p>
+        {% for item in items %} - Using curly brackets and percentage signs
+        allows creation of for loops directly within the html template <br />
+        {% endfor %}
+      </p>
+      <p>
+        {% if %} {% else %} - Same syntax as above can be used for creating
+        if/else loops.
       </p>
     </section>
     <footer></footer>
