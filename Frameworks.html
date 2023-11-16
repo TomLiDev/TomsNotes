@@ -48,6 +48,38 @@
         probably won't need the further functionality. Do the simplest thing
         possible that will work.
       </p>
+      <p>
+        Separation of Concerns - Split functions, variables etc into individual,
+        resuable chunks of code that do one thing. There should be no
+        repetition. Splitting processes/functions down allows code to be
+        completed more easliy and the project completion.
+      </p>
+      <p>
+        MVC - Model, View and Controller. An architectural programming pattern,
+        a way of thinking about processing information and structuring an
+        application. Utilised by most frameworks. Seperate data management and
+        data presentation. Breaking down processes/functions as far as possible.
+      </p>
+      <p>
+        Model - Represents the data being worked with. Model code often
+        retrieves/adds data held in a DB or other structure, or via another
+        service such as an API. Generally wouldn't be 'seen'. Talks to the
+        Controller, not the View.
+      </p>
+      <p>
+        View - Display the user interface. Often built as templates to hold
+        information provided by the Controller.
+      </p>
+      <p>
+        Controller - Code that does thinking and decision, handles user
+        interaction and provides 'behaviour'. Never talks to a DB directly.
+        Never talks to the screen direclty, only the View. E.g. a GET request,
+        prompted by someone clicking on the website, would be processed via the
+        Controller.
+      </p>
+      <p>
+        Frameworks can be considered Full or Micro, depending on the number of pre-installed components 
+      </p>
     </section>
     <footer></footer>
   </body>
